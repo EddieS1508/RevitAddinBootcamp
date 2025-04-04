@@ -14,6 +14,7 @@
             TaskDialog.Show("Test", "This is new message from me!!");
 
             TaskDialog.Show("Test", "This is another from me!!");
+            TaskDialog.Show("Test", "Add via GitHub!!");
 
             // Your Module 01 Skills code goes here
             // Delete the TaskDialog below and add your code

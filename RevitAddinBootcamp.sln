@@ -3,7 +3,7 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.11.35327.3
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RevitAddinBootcamp", "RevitAddinBootcamp\RevitAddinBootcamp.csproj", "{B4AB805E-B5E4-4043-BDD4-927FBAB8583E}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "RevitAddinBootcamp", "RevitAddinBootcamp\RevitAddinBootcamp.csproj", "{B4AB805E-B5E4-4043-BDD4-927FBAB8583E}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -13,12 +13,14 @@ Global
 		Debug R23|Any CPU = Debug R23|Any CPU
 		Debug R24|Any CPU = Debug R24|Any CPU
 		Debug R25|Any CPU = Debug R25|Any CPU
+		Debug R26|Any CPU = Debug R26|Any CPU
 		Release R20|Any CPU = Release R20|Any CPU
 		Release R21|Any CPU = Release R21|Any CPU
 		Release R22|Any CPU = Release R22|Any CPU
 		Release R23|Any CPU = Release R23|Any CPU
 		Release R24|Any CPU = Release R24|Any CPU
 		Release R25|Any CPU = Release R25|Any CPU
+		Release R26|Any CPU = Release R26|Any CPU
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
 		{B4AB805E-B5E4-4043-BDD4-927FBAB8583E}.Debug R20|Any CPU.ActiveCfg = Debug R20|Any CPU
@@ -33,6 +35,8 @@ Global
 		{B4AB805E-B5E4-4043-BDD4-927FBAB8583E}.Debug R24|Any CPU.Build.0 = Debug R24|Any CPU
 		{B4AB805E-B5E4-4043-BDD4-927FBAB8583E}.Debug R25|Any CPU.ActiveCfg = Debug R25|Any CPU
 		{B4AB805E-B5E4-4043-BDD4-927FBAB8583E}.Debug R25|Any CPU.Build.0 = Debug R25|Any CPU
+		{B4AB805E-B5E4-4043-BDD4-927FBAB8583E}.Debug R26|Any CPU.ActiveCfg = Debug R26|Any CPU
+		{B4AB805E-B5E4-4043-BDD4-927FBAB8583E}.Debug R26|Any CPU.Build.0 = Debug R26|Any CPU
 		{B4AB805E-B5E4-4043-BDD4-927FBAB8583E}.Release R20|Any CPU.ActiveCfg = Release R20|Any CPU
 		{B4AB805E-B5E4-4043-BDD4-927FBAB8583E}.Release R20|Any CPU.Build.0 = Release R20|Any CPU
 		{B4AB805E-B5E4-4043-BDD4-927FBAB8583E}.Release R21|Any CPU.ActiveCfg = Release R21|Any CPU
@@ -45,6 +49,8 @@ Global
 		{B4AB805E-B5E4-4043-BDD4-927FBAB8583E}.Release R24|Any CPU.Build.0 = Release R24|Any CPU
 		{B4AB805E-B5E4-4043-BDD4-927FBAB8583E}.Release R25|Any CPU.ActiveCfg = Release R25|Any CPU
 		{B4AB805E-B5E4-4043-BDD4-927FBAB8583E}.Release R25|Any CPU.Build.0 = Release R25|Any CPU
+		{B4AB805E-B5E4-4043-BDD4-927FBAB8583E}.Release R26|Any CPU.ActiveCfg = Release R26|Any CPU
+		{B4AB805E-B5E4-4043-BDD4-927FBAB8583E}.Release R26|Any CPU.Build.0 = Release R26|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

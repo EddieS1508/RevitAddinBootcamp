@@ -76,16 +76,14 @@ namespace RevitAddinBootcamp
             using Transaction t = new Transaction(doc);
             {
                 t.Start("Insert Families into Rooms");
-                // 8. insert families
-                //FamilySymbol currFamSymbol = GetFamilySymbolByName(doc, "Desk", "Large");
-                //currFamSymbol.Activate();
+                // cycle through rooms, match and insert families
 
                 foreach (Room CurrRoom in roomCollector)
                 {
                     foreach (Rooms room in rooms)
                     {
-                        //int famCount = 0;
-                        if (CurrRoom.Name == room.Roomname) // classroom1.Roomname)
+                        string roomName = room.Roomname;
+                        if (CurrRoom.Name.Contains(roomName))
                         {
                             FamilySymbol currFamSymbol = GetFamilySymbolByName(doc, room.familyType, room.familyType);
                             currFamSymbol.Activate();
@@ -94,8 +92,6 @@ namespace RevitAddinBootcamp
 
                             FamilyInstance CurrFamInstance = doc.Create.NewFamilyInstance(loc.Point, currFamSymbol, StructuralType.NonStructural);
 
-                            //string department = Utils.GetParameterValueAsString(CurrRoom, "Department");
-                            //double area = Utils.GetParameterValueAsDouble(CurrRoom, BuiltInParameter.ROOM_AREA);
                             famCount = famCount + 1;
                         }
                     }

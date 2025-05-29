@@ -16,7 +16,6 @@ namespace RevitAddinBootcamp
             Document doc = uidoc.Document;
 
             // Your Module 03 Challenge code goes here
-            
             // create instance of classes for each room
             Rooms classroom1 = new Rooms("Classroom", "Desk", "Teacher", 1);
             Rooms classroom2 = new Rooms("Classroom", "Desk", "Student", 6);
@@ -26,7 +25,7 @@ namespace RevitAddinBootcamp
             Rooms office1 = new Rooms("Office", "Desk", "Teacher", 1);
             Rooms office2 = new Rooms("Office", "Desk", "Student", 1);
             Rooms office3 = new Rooms("Office", "Chair-Desk", "Default", 1);
-            Rooms office4 = new Rooms("Office", "Shelf", "Large", 1);
+            Rooms office4 = new Rooms("Office", "Shelf", "Small", 1);
 
             Rooms vrlab1 = new Rooms("VR Lab", "Table-Rectangular", "Small", 1);
             Rooms vrlab2 = new Rooms("VR Lab", "Table-Rectangular", "Large", 8);
@@ -85,12 +84,17 @@ namespace RevitAddinBootcamp
                         string roomName = room.Roomname;
                         if (CurrRoom.Name.Contains(roomName))
                         {
-                            FamilySymbol currFamSymbol = GetFamilySymbolByName(doc, room.familyType, room.familyType);
+                            FamilySymbol currFamSymbol = GetFamilySymbolByName(doc, room.familyName, room.familyType);
                             currFamSymbol.Activate();
 
                             LocationPoint loc = CurrRoom.Location as LocationPoint;
 
-                            FamilyInstance CurrFamInstance = doc.Create.NewFamilyInstance(loc.Point, currFamSymbol, StructuralType.NonStructural);
+                            // loop through quantity req'd
+                            for (int i = 1; i <= room.familyQuantity; i++)
+                            {
+                                FamilyInstance CurrFamInstance = doc.Create.NewFamilyInstance(loc.Point, currFamSymbol, StructuralType.NonStructural);
+                            }
+                            
 
                             famCount = famCount + 1;
                         }

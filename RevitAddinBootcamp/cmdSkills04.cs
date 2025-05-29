@@ -14,7 +14,6 @@
             // Delete the TaskDialog below and add your code
             TaskDialog.Show("Module 04 Skills", "Got Here!");
 
-
             return Result.Succeeded;
         }
     }
